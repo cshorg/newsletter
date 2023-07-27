@@ -1,7 +1,10 @@
-const Button = () => {
+const Button = ({ label, onClick }) => {
   return (
-    <button className="w-[320px] bg-slate hover:shadow-2xl bg-gradient-to-r hover:from-brightRed hover:to-brightOrange p-4 rounded-lg text-white font-semibold">
-      Subscribe to monthly newsletter
+    <button
+      onClick={onClick}
+      className="min-w-full p-4 font-semibold text-white rounded-lg bg-slate hover:shadow-2xl bg-gradient-to-r hover:from-brightRed hover:to-brightOrange"
+    >
+      {label}
     </button>
   )
 }

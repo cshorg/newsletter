@@ -1,9 +1,10 @@
-import { useState } from "react"
+import { useContext } from "react"
 import Card from "./components/Card"
 import ThankyouCard from "./components/ThankyouCard"
+import { MainContext } from "./context/MainContext"
 
 function App() {
-  const [status, setStatus] = useState(false)
+  const { status } = useContext(MainContext)
 
   return (
     <>
