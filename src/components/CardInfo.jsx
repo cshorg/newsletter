@@ -1,8 +1,10 @@
 const CardInfo = () => {
   return (
-    <div className="text-slate">
-      <div className="text-5xl font-bold text-slate">Stay Updated!</div>
-      <p className="mt-8 w-[400px]">
+    <div className="p-6 mt-10 text-slate">
+      <div className="text-4xl font-bold lg:text-5xl text-slate">
+        Stay Updated!
+      </div>
+      <p className="mt-8 lg:w-[400px]">
         Join 60,000+ product managers receiving monthly updates on:
       </p>
       <ul className="mt-8">
