@@ -10,9 +10,9 @@ const Card = () => {
         src="src/assets/images/illustration-sign-up-mobile.svg"
         alt="banner"
       />
-      <div className="flex flex-col items-start lg:pl-16 lg:pr-8 lg:py-28">
+      <div className="flex flex-col items-start lg:pl-16 lg:py-28">
         <CardInfo />
-        <div className="px-6 mt-8">
+        <div className="px-6 mt-6">
           <Input />
         </div>
         <div className="px-6 mt-6">
@@ -20,7 +20,7 @@ const Card = () => {
         </div>
       </div>
       <img
-        className="hidden object-scale-down w-[380px] lg:flex"
+        className="hidden object-scale-down w-[420px] lg:flex"
         src="src/assets/images/illustration-sign-up-desktop.svg"
         alt="banner"
       />
