@@ -5,7 +5,12 @@ import Input from "./Input"
 import { MainContext } from "../context/MainContext"
 
 const Card = () => {
-  const { setStatus } = useContext(MainContext)
+  const { setStatus, error } = useContext(MainContext)
+
+  const handleClick = () => {
+    if (error) return
+    setStatus(true)
+  }
 
   return (
     <div className="lg:w-[960px] w-full h-full bg-white lg:h-[680px] lg:rounded-3xl shadow-2xl flex flex-col justify-between lg:flex-row">
@@ -21,7 +26,7 @@ const Card = () => {
         </div>
         <div className="w-full px-6 mt-6 mb-6">
           <Button
-            onClick={() => setStatus(true)}
+            onClick={() => handleClick()}
             label={"Subscribe to monthly newsletter"}
           />
         </div>
