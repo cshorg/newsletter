@@ -40,6 +40,9 @@ Users should be able to:
 ### Built with
 
 - React
+- Vite
+- React Context
+- Regex
 - Tailwind
 - Flexbox
 - Mobile-first workflow
